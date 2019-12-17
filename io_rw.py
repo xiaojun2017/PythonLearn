@@ -11,6 +11,11 @@ f.close()
 
 f = open('poem.txt', 'r')
 
+print("readLines:")
+lines = f.readlines()
+for line in lines:
+    print(line.strip())
+
 while True:
     line = f.readline()
     if len(line) == 0:
